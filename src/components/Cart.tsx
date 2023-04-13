@@ -1,6 +1,7 @@
 import useCart from "../hooks/useCart";
 import { useState } from "react";
 import CartLineItem from "./CartLineItem";
+import { CartItemType } from "../context/cart/types";
 
 const Cart = () => {
   const [confirm, setConfirm] = useState<boolean>(false);
@@ -18,7 +19,7 @@ const Cart = () => {
     <>
       <h2 className="offscreen">Cart</h2>
       <ul className="cart">
-        {cart.map((item) => {
+        {cart.map((item: CartItemType) => {
           return (
             <CartLineItem
               key={item.sku}

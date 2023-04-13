@@ -1,8 +1,8 @@
 import { ChangeEvent, ReactElement } from "react";
-import { CartItemType } from "../context/cart/CartProvider";
-import { ReducerAction, ReducerActionType } from "../context/cart/CartProvider";
+import { CartItemType } from "../context/cart/types";
+import { ReducerAction, ReducerActionType } from "../context/cart/types";
 
-type PropsType = {
+export type PropsType = {
   item: CartItemType;
   dispatch: React.Dispatch<ReducerAction>;
   REDUCER_ACTIONS: ReducerActionType;
