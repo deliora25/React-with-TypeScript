@@ -2,13 +2,10 @@ import { createContext, ReactElement } from "react";
 import { UseCartContextType } from "./types";
 import { initCartContextState, initCartState } from "./constants";
 import { useCartContext } from "./useCartContext";
+import { ChildrenType } from "../products/types";
 
 export const CartContext =
   createContext<UseCartContextType>(initCartContextState);
-
-type ChildrenType = {
-  children?: ReactElement | ReactElement[];
-};
 
 export const CartProvider = ({ children }: ChildrenType): ReactElement => {
   return (
