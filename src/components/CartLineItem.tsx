@@ -1,6 +1,6 @@
 import { ChangeEvent, ReactElement } from "react";
-import { CartItemType } from "../context/CartProvider";
-import { ReducerAction, ReducerActionType } from "../context/CartProvider";
+import { CartItemType } from "../context/cart/CartProvider";
+import { ReducerAction, ReducerActionType } from "../context/cart/CartProvider";
 
 type PropsType = {
   item: CartItemType;

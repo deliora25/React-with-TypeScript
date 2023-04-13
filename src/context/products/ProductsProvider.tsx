@@ -1,10 +1,6 @@
 import { ReactElement, createContext, useEffect, useState } from "react";
-import {
-  UseProductsContextType,
-  ChildrenType,
-  ProductType,
-} from "./products/types";
-import { initContextState, initState } from "./products/constants";
+import { UseProductsContextType, ChildrenType, ProductType } from "./types";
+import { initContextState, initState } from "./constants";
 
 export const ProductsContext =
   createContext<UseProductsContextType>(initContextState);

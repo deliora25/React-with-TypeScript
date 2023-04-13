@@ -1,7 +1,7 @@
 import { createContext, ReactElement } from "react";
-import { UseCartContextType } from "./cart/types";
-import { initCartContextState, initCartState } from "./cart/constants";
-import { useCartContext } from "./cart/useCartContext";
+import { UseCartContextType } from "./types";
+import { initCartContextState, initCartState } from "./constants";
+import { useCartContext } from "./useCartContext";
 
 export const CartContext =
   createContext<UseCartContextType>(initCartContextState);
