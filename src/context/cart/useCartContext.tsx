@@ -3,7 +3,7 @@ import { useReducer, useMemo } from "react";
 import { reducer } from "./reducer";
 import { REDUCER_ACTION_TYPE } from "./constants";
 
-//define useReducer hook
+//define useCartContext with useReducer
 export const useCartContext = (initCartState: CartStateType) => {
   const [state, dispatch] = useReducer(reducer, initCartState);
 
